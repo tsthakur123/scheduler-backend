@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: scheduler-backend
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+    branch: main
+    repo: https://github.com/tsthakur123/scheduler-backend
